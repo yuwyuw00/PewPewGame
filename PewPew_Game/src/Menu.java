@@ -12,7 +12,7 @@ public class Menu {
 
         button.setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH, GameManager.SCREEN_HEIGHT / 5));
 
-        button.setIcon(new ImageIcon("/assets/start.jpg"));
+        button.setIcon(new ImageIcon("src/assets/start.jpg"));
         button.setBorderPainted(false);
         button.setContentAreaFilled(false);
         button.setFocusPainted(false);
@@ -22,9 +22,9 @@ public class Menu {
             public void actionPerformed(ActionEvent e) {
                 frmPewPewMenu.dispose(); 
                
-                GameFrame gameFrame = new GameFrame();
+                Frame Frame = new Frame();
                 
-                gameFrame.setVisible(true); 
+                Frame.setVisible(true); 
             }
         });
 
@@ -46,7 +46,7 @@ public class Menu {
 
         instruction.setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH / 2, GameManager.SCREEN_HEIGHT / 5));
 
-        instruction.setIcon(new ImageIcon("/assets/instruction.jpg"));
+        instruction.setIcon(new ImageIcon("src/assets/instruction.jpg"));
         instruction.setBorderPainted(false);
         instruction.setContentAreaFilled(false);
         instruction.setFocusPainted(false);
@@ -88,7 +88,7 @@ public class Menu {
         label.setForeground(new Color(255, 255, 255));
         label.setBounds(-9, 0, 1000, 700);
         label.setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH, GameManager.SCREEN_HEIGHT));
-        label.setIcon(new ImageIcon("/assets/menu.jpg"));
+        label.setIcon(new ImageIcon("src/assets/menu.jpg"));
         pane.add(label);
     }
 
@@ -101,7 +101,7 @@ public class Menu {
     private static void createFrame() {
         frmPewPewMenu = new JFrame("MENU");
         frmPewPewMenu.setTitle("PEW PEW MENU");
-        frmPewPewMenu.setIconImage(Toolkit.getDefaultToolkit().getImage("/assets/elienAndroid.png"));
+        frmPewPewMenu.setIconImage(Toolkit.getDefaultToolkit().getImage("src/assets/elienAndroid.png"));
         frmPewPewMenu.setResizable(false);
         frmPewPewMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         addComponents(frmPewPewMenu.getContentPane());

@@ -26,7 +26,7 @@ public class Alien {
         this.initialY = y; // Store the initial Y position
 
         try {
-            image = ImageIO.read(new File("/assets/elienAndroid.png"));
+            image = ImageIO.read(new File("src/assets/elienAndroid.png"));
         } catch (IOException ex) {
             ex.printStackTrace();
         }

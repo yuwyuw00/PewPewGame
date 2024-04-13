@@ -22,7 +22,7 @@ public class AlienBullet {
         this.height = 55; 
         this.active = true;
         
-        ImageIcon icon = new ImageIcon("/assets/BULLETa.png");
+        ImageIcon icon = new ImageIcon("src/assets/BULLETa.png");
         image = icon.getImage();
     }
 

@@ -26,7 +26,7 @@ public class GamePanel extends JPanel implements ActionListener {
     public GamePanel() {
         setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH, GameManager.SCREEN_HEIGHT));
 
-        backgroundImage = loadImage("/assets/bgmain.png");
+        backgroundImage = loadImage("src/assets/bgmain.png");
 
         player = new Player(GameManager.SCREEN_WIDTH / 2 - 25, GameManager.SCREEN_HEIGHT - 130, 60, 60);
 

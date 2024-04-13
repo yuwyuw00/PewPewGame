@@ -22,7 +22,7 @@ public class PlayerBullet {
         this.height = 60;
         this.active = true;
         
-        ImageIcon icon = new ImageIcon("/assets/BULLET.png");
+        ImageIcon icon = new ImageIcon("src/assets/BULLET.png");
         image = icon.getImage();
     }
 

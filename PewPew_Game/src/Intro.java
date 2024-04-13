@@ -5,8 +5,8 @@ import java.awt.*;
 
 public class Intro extends JPanel implements Runnable {
 	JFrame window = new JFrame();
-	private String imagePath = "/assets/load.jpg";
-	private String audio8bit = "/assets/RickRoll.wav";
+	private String imagePath = "src/assets/load.jpg";
+	private String audio8bit = "src/assets/RickRoll.wav";
 	private int wait = 6000; //As wait
 	
 	public Intro () {
@@ -16,7 +16,7 @@ public class Intro extends JPanel implements Runnable {
 		this.setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH, GameManager.SCREEN_HEIGHT));
 		window.add(this);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		window.setIconImage(Toolkit.getDefaultToolkit().getImage("/assets/elienAndroid.png"));
+		window.setIconImage(Toolkit.getDefaultToolkit().getImage("src/assets/elienAndroid.png"));
 		window.pack();
 		window.setResizable(false);
 		window.setVisible(true);

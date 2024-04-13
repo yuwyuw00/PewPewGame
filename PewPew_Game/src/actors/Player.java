@@ -21,7 +21,7 @@ public class Player {
     }
 
     private void loadImage() {
-        ImageIcon icon = new ImageIcon("/assets/spaceship.png");
+        ImageIcon icon = new ImageIcon("src/assets/spaceship.png");
         image = icon.getImage();
     }
 
