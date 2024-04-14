@@ -21,8 +21,9 @@ public class Player {
     }
 
     private void loadImage() {
-        ImageIcon icon = new ImageIcon("src/assets/spaceship.png");
-        image = icon.getImage();
+    	ImageIcon icon = new ImageIcon(getClass().getResource("/assets/spaceship.png"));
+    	image = icon.getImage();
+
     }
 
     public int getX() {
@@ -42,11 +43,11 @@ public class Player {
     }
 
     public void moveLeft() {
-        x -= 4; // Adjust speed as needed
+        x -= 4; 
     }
 
     public void moveRight() {
-        x += 4; // Adjust speed as needed
+        x += 4; 
     }
 
     public Rectangle getBounds() {

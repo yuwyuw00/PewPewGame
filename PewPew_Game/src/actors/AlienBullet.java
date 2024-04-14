@@ -22,8 +22,9 @@ public class AlienBullet {
         this.height = 55; 
         this.active = true;
         
-        ImageIcon icon = new ImageIcon("src/assets/BULLETa.png");
+        ImageIcon icon = new ImageIcon(getClass().getResource("/assets/BULLETa.png"));
         image = icon.getImage();
+
     }
 
     public void move() {
@@ -41,7 +42,7 @@ public class AlienBullet {
         return active;
     }
 
-    // Define getBounds method to return the bounding box of the bullet
+   
     public Rectangle getBounds() {
         return new Rectangle(x, y, width, height);
     }

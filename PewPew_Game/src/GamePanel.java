@@ -26,7 +26,8 @@ public class GamePanel extends JPanel implements ActionListener {
     public GamePanel() {
         setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH, GameManager.SCREEN_HEIGHT));
 
-        backgroundImage = loadImage("src/assets/bgmain.png");
+        backgroundImage = loadImage("/assets/bgmain.png");
+
 
         player = new Player(GameManager.SCREEN_WIDTH / 2 - 25, GameManager.SCREEN_HEIGHT - 130, 60, 60);
 
@@ -127,13 +128,14 @@ public class GamePanel extends JPanel implements ActionListener {
     private Image loadImage(String fileName) {
         Image image = null;
         try {
-            image = new ImageIcon(fileName).getImage();
+            image = new ImageIcon(getClass().getResource(fileName)).getImage();
         } catch (Exception e) {
             System.err.println("Failed to load image: " + fileName);
             e.printStackTrace();
         }
         return image;
     }
+    
 
     @Override
     protected void paintComponent(Graphics g) {

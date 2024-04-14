@@ -12,7 +12,7 @@ public class Menu {
 
         button.setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH, GameManager.SCREEN_HEIGHT / 5));
 
-        button.setIcon(new ImageIcon("src/assets/start.jpg"));
+        button.setIcon(new ImageIcon(Menu.class.getResource("/assets/start.jpg")));
         button.setBorderPainted(false);
         button.setContentAreaFilled(false);
         button.setFocusPainted(false);
@@ -46,7 +46,7 @@ public class Menu {
 
         instruction.setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH / 2, GameManager.SCREEN_HEIGHT / 5));
 
-        instruction.setIcon(new ImageIcon("src/assets/instruction.jpg"));
+        instruction.setIcon(new ImageIcon(Menu.class.getResource("/assets/instruction.jpg")));
         instruction.setBorderPainted(false);
         instruction.setContentAreaFilled(false);
         instruction.setFocusPainted(false);
@@ -88,7 +88,7 @@ public class Menu {
         label.setForeground(new Color(255, 255, 255));
         label.setBounds(-9, 0, 1000, 700);
         label.setPreferredSize(new Dimension(GameManager.SCREEN_WIDTH, GameManager.SCREEN_HEIGHT));
-        label.setIcon(new ImageIcon("src/assets/menu.jpg"));
+        label.setIcon(new ImageIcon(Menu.class.getResource("/assets/menu.jpg")));
         pane.add(label);
     }
 

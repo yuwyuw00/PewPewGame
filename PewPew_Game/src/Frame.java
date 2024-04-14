@@ -5,7 +5,7 @@ public class Frame extends JFrame {
     private GamePanel gamePanel;
 
     public Frame() {
-    	setIconImage(Toolkit.getDefaultToolkit().getImage("src/assets/elienAndroid.png"));
+    	setIconImage(Toolkit.getDefaultToolkit().getImage(Frame.class.getResource("/assets/elienAndroid.png")));
     	setResizable(false);
         setTitle("Pew Pew Space Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
